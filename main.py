@@ -55,7 +55,7 @@ def test(net):
 
 if __name__ == '__main__':
     net = NN(10, 2)
-    optimizer = optim.SGD(net.parameters(), lr=0.01, momentum=0.5)
+    optimizer = optim.SGD(net.parameters(), lr=TRAIN_PARAMS.L_R, momentum=TRAIN_PARAMS.MOMENTUM)
 
     loss_recs = []
     acc_recs = []
